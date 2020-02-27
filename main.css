@@ -17,6 +17,9 @@ main, footer, .block {
     padding: 20px;
 
 }
+#work-header {
+    color: black;
+}
 p {
     margin-right: 40px;
     margin-left: 40px;
