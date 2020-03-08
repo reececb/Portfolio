@@ -48,7 +48,7 @@ main, footer, .block {
     font-weight: 100;
 }
 .block {
-    height: 750px;
+    height: 820px;
 }
 
 .description {
@@ -70,6 +70,7 @@ main, footer, .block {
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 35px;
+    margin-bottom: 20px;
 }
 #about-me-header {
     font-size: 35px;
