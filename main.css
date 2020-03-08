@@ -47,6 +47,9 @@ main, footer, .block {
 .block {
     height: 820px;
 }
+#my-work {
+    height: 1000px;
+}
 
 .description {
     display: flex; 
@@ -57,7 +60,7 @@ main, footer, .block {
 
 }
 .section-links {
-    margin-top: 45px;
+    padding: 20px;
     font-size: 22px;
 }
 #work-header {
