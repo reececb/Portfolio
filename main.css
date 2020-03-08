@@ -2,13 +2,55 @@
     box-sizing: border-box;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+    background: url(images/Globe_Grids.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body {
+    font-family: 'Open Sans Condensed';
+}
 main, footer, .block {
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    font-weight: lighter;
+}
+#description-heading {
+    text-align: center;
+    color: white;
+    padding: 25px;
+    border-bottom: 2px solid rgb(0, 199, 139);
+    font-size: 40px;
+}
+#bio {
+    background: url(images/portfolio_background.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    height: 800px;
+    justify-content: flex-start;
+}
+#description-heading, .section-header-secondary {
+    font-weight: 100;
+}
+.block {
+    height: 750px;
+}
+
 .description {
     display: flex; 
     flex-direction: column;
@@ -17,87 +59,258 @@ main, footer, .block {
     padding: 20px;
 
 }
+.section-links {
+    margin-top: 45px;
+    font-size: 22px;
+}
 #work-header {
     color: black;
+    font-weight: 100;
+    border-bottom: 1px solid rgb(0, 199, 139);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 35px;
+}
+#about-me-header {
+    font-size: 35px;
 }
 p {
+    text-align: center;
     margin-right: 40px;
     margin-left: 40px;
+    font-weight: 100;
+    font-size: 20px;
 }
 
-#description-heading {
-    text-align: center;
-
+.section-header-secondary {
+    padding-top: 50px;
+    border-bottom: 1px solid rgb(0, 199, 139);
+    font-size: 28px;
+    margin-bottom: 25px;
 }
-.topnav {
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-end;
-   align-items: center;
-   border: 2px solid black; 
+.quizappimg {
+    padding-top: 35px;
+    width: 200px;
+    height: auto;
 }
-#top-left-logo {
- margin-right: auto;
- margin-left: 15px;
+img {
+    max-width: 100%;
+    max-height: 100%; 
+    border: 10px solid lightgrey;
+}
+#Reece {
+    width: 200px;
+    height: auto;
+    border-radius: 90px;
+}
+.footer {
+    border-top: 2px solid rgb(0, 199, 139);
+    background: url(images/Portfolio_background.png) no-repeat center center;
+    color: white;
+}
+.bottom-links {
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 a {
-    padding: 10px;
-}
-#bio{
-    background-color: lightgrey;
-    border: 1px solid black;
-}
-#my-work {
-    background-color: lightgrey;
-    border: 1px solid black;
-}
-
-#about-me {
-    background-color: grey;
-    border: 1px solid black;
+    padding: 5px;
+    text-decoration: none;
+    line-height: 1;
+    
+    position: relative;
+    z-index: 0;
+    padding: 5px 5px;
+    overflow: hidden;
+    color: #333;
+    vertical-align: bottom;
+    transition: color .3s ease-out;
 }
 
-@media (min-width: 475px) {
+a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translateY(calc(100% - 2px));
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+    transition: transform .25s ease-out;
+}
+a:hover { 
+    color: #fff; 
+ }
+ a:hover::before {
+    transform: translateY(0);
+    transition: transform .25s ease-out;
+ }
+
+.top-links:visited {
+    color: black;
+}
+#view-work:visited {
+    color: white;
+}
+#view-work {
+    color: white;
+}
+h1, h2, p, a, img, .topnav {
+-webkit-animation: fadein 3.5s;
+       -moz-animation: fadein 3.5s; 
+        -ms-animation: fadein 3.5s; 
+         -o-animation: fadein 3.5s; 
+            animation: fadein 3.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0;
+           transform: translateX(-200%); 
+        }
+    to   { opacity: 1; 
+           transform: translateX(0);
+        }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@media (min-width: 560px) {
+    
+    #description-heading {
+        font-size: 50px;
+        text-align: left;
+        line-height: 45px;
+        margin-bottom: 50px;
+        margin-left: 48px;
+    }
     #bio {
         flex-direction: row;
         align-items: center;
-        height: 300px;
+        height: 800px;
     }
     .block {
-        height: 300px;
+        height: 900px;
     }
-
-    #description-heading {
-        margin-left: 25px;
-        margin-right: 25px;
+    #work-header {
+        font-size: 50px;
+    
+    }
+    .quizappimg {
+       width: 300px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .section-header-secondary {
+        margin-right: auto;
+        margin-left: 60px;
+        font-size: 40px;
+    }
+    .section-links {
+        font-size: 30px;
+    }
+    #about-me-header {
+        font-size: 50px;
+        align-self: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .bottom-links {
+        margin-top: 0;
+    }
+    a {
+        font-size: 25px;
     }
     footer {
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .logo-text {
-        margin-right: auto;
-    }
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
 
-
+    }
 }
 
 @media (min-width: 1100px) {
+    .topnav {
+        padding-bottom: 14px;
+    }
+    #description-heading {
+        margin-top: -90px;
+        font-size: 55px;
+        line-height: 50px;
+        margin-right: 0;
+        margin-left: 50px;
+
+        
+    }
+    #bio {
+        height: 1000px;
+        justify-content: space-evenly;
+    }
+    #bio .description, #description-heading {
+        margin-bottom: 50px;
+    }
     .block {
         width: 100%;
         flex-direction: row;
     }
-    .section-links {
+    #work-header {
+        font-size: 55px;
+        padding: 40px;
+    }
+    .quizappimg {
+        margin-left: 100;
+        width: 300px;
+    }
+    .section-header-secondary {
+        margin-left: auto; 
         margin-right: auto;
-        margin-left: 45px;
+        font-size: 55px;
+
     }
-    .section-header-secondary{
-        text-align: center;
-        margin-left: 40px;
+    #quiz-app-paragraph {
+        margin-left: 200px;
     }
-    .logo-text {
-        margin-left: 25px;
+    #Reece {
+        width: 100%;
+        height: auto;
+        border-radius: 220px;
+    }
+    #about-me {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .about-img {
+        width: 300px;
+    
+    }
+    .description {
+        width: 700px;
+    }
+    p {
+        width: 100%;
+        height: auto;
+        font-size: 35px;   
+    }
+    a {
+        font-size: 35px;
+    }
+    footer {
+        height: 100px;
     }
 }
-

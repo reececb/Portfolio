@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="description"  content="Reece Bryant personal portfolio">
     <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <title>Document</title>
 </head>
@@ -12,60 +14,58 @@
 <body>
     
     <nav class="topnav">
-        <h1 class="logo-text" id="top-left-logo">Reece Bryant</h1>
-        <a class="top-links" href="#my-work">Work</a>
-        <a class="top-links" href="#about">About</a>
+        <a class="top-links" href="#work-header">Work</a>
+        <a class="top-links" href="#about-me">About</a>
         <a class="top-links" href="#contact">Contact</a>
     </nav>
     <main>
         <section class="block" id="bio">
-            <h2 id="description-heading">Web Developer and Programmer</h2>
+            <h1 id="description-heading">Web Developer and Programmer</h1>
             <div class="description">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil 
-                quae animi accusamus officia voluptatem fugiat, veritatis 
-                veniam cumque consequatur dolores, expedita blanditiis, labore voluptate. 
-                Ad nostrum alias optio officia. Ex?</p>
-            
-                <a class ="section-links" id="view-work" href="#my-work">View My Work</a>
+                <p>My name is Reece Bryant.  I am a web developer based in Texas.  
+                    I have gained interest and developed a passion for work in this field, 
+                    which has led me to pursue a career in it.  
+                    I possess a vision to craft creative, intuitive, and exciting projects.
+                </p>
+                <a class ="section-links" id="view-work" href="#work-header">View My Work</a>
             </div>    
         </section>
-        <h2 class="section-header-secondary" id="work-header">My Work</h2>
+        <h2 id="work-header">My Work</h2>
         <section class="block" id="my-work">
-        <h2 class= "section-header-secondary">Quiz Application</h2>
-        <div class="quizapp">    
+        <div class="quizappimg">
+            <img src="images/pc-hw-quiz.jpg" alt="Screenshot of Quiz Application Project">
         </div>
-
-            <div class="description">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil 
-                quae animi accusamus officia voluptatem fugiat, veritatis 
-                veniam cumque consequatur dolores, expedita blanditiis, labore voluptate. 
-                Ad nostrum alias optio officia. Ex?
+            <div class="description" id="quiz-app-paragraph">
+                <h2 class= "section-header-secondary">Quiz Application</h2>
+            <p>This is a project I created while learning Javascript and Jquery.  
+                It is an interactive web quiz that provides feedback to user input and keeps track of the user’s score. 
+                Below is a link to a live version of this project hosted on Github pages. 
             </p>
-            <a class ="section-links" href="#view-project">View Project</a>
-            </div>
+            <a class ="section-links" href="https://reececb.github.io/PC-Hardware-Quiz-App/">View Project</a>
+        </div>
+            
         </section>
         <section class="block" id="about-me">
-            <h2 class="section-header-secondary">About Me</h2>
+            <h2 class="section-header-secondary" id="about-me-header">About Me</h2>
             <div class="about-img">
-
+                <img id="Reece" src="images/reece_bryant.jpg" alt="photo of Reece Bryant">
             </div>
-            <div class="description">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil 
-                quae animi accusamus officia voluptatem fugiat, veritatis 
-                veniam cumque consequatur dolores, expedita blanditiis, labore voluptate. 
-                Ad nostrum alias optio officia. Ex?
-            </p>
-        
-          <a class ="section-links" href="#contact">Contact Me</a>
-          </div>
 
+            <div class="description">
+                <p>I first realized that I was interested in technology at age seventeen.  
+                    I started researching computer hardware, and decided to build my own.  
+                    Since then I have done many builds and I really have a lot of fun with  it as a hobby.  
+                    I have always enjoyed  DIY projects and learning how things work.  
+                    My journey into coding and web dev did not start until more recently.  
+                    My other interests are automobiles, music, and being active outdoors.  
+                    I also have two dogs, and absolutely love animals.
+            </p>
         </section>
     </main>
-    <footer class="footer">
-        <h2 class="logo-text">Contact Me</h2>
-        <a href="#email">reececb@gmail.com</a>
-        <a href="#Linkedin">LinkedIn</a>
-        <a href="#github">Github</a>
+    <footer class="footer" id="contact">
+        <a class="bottom-links" href="mailto:reececb@gmail.com">Email</a>
+        <a class="bottom-links" href="https://www.linkedin.com/in/reece-bryant-20b5781a3">LinkedIn</a>
+        <a class="bottom-links" href="https://github.com/reececb">Github</a>
     </footer>  
 </body>
 </html>
