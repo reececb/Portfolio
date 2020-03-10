@@ -72,6 +72,7 @@ main, footer, .block {
 .section-links {
     padding: 20px;
     font-size: 22px;
+    margin-top: 15px;
 }
 #work-header {
     color: black;
@@ -209,10 +210,9 @@ h1, h2, p, a, img, .topnav {
     }
     #description-heading {
         font-size: 50px;
-        text-align: left;
+        text-align: center;
         line-height: 45px;
         margin-bottom: 50px;
-        margin-left: 48px;
     }
     #bio {
         flex-direction: row;
@@ -269,10 +269,6 @@ h1, h2, p, a, img, .topnav {
         margin-top: -90px;
         font-size: 55px;
         line-height: 50px;
-        margin-right: 0;
-        margin-left: 50px;
-
-        
     }
     #bio {
         height: 1000px;
