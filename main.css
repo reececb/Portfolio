@@ -231,6 +231,9 @@ h1, h2, p, a, img, .topnav {
     .quizappimg {
        width: 300px;
     }
+    #cyber_plate_img {
+        width: 85%;
+    }
     p {
         font-size: 20px;
     }
@@ -290,6 +293,10 @@ h1, h2, p, a, img, .topnav {
     .quizappimg {
         margin-left: 100;
         width: 300px;
+    }
+    #cyber_plate_img {
+        width: 45%;
+        margin-left: 35px;
     }
     .section-header-secondary {
         margin-left: auto; 
